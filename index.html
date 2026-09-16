@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff6b21" />
+    <title>Bhagva You — Create your spark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Bhagva You home"><span class="brand-mark">B</span><span>bhagva<span>you</span></span></a>
+        <nav class="nav-list">
+          <a class="nav-link active" href="#home" data-view="home">⌂ <span>Home</span></a>
+          <a class="nav-link" href="#explore" data-view="explore">⌕ <span>Explore</span></a>
+          <a class="nav-link" href="#shorts" data-view="shorts">▷ <span>Shorts</span></a>
+          <a class="nav-link" href="#communities" data-view="communities">◎ <span>Communities</span></a>
+          <a class="nav-link" href="#messages" data-view="messages">◇ <span>Messages</span><b>3</b></a>
+          <a class="nav-link" href="#notifications" data-view="notifications">♧ <span>Notifications</span></a>
+        </nav>
+        <button class="create-button" data-open-composer>＋ Create</button>
+        <div class="sidebar-foot"><button class="profile-switch"> <span class="avatar mini">VK</span><span><strong>Vinod Kumar</strong><small>@vinodbuilds</small></span><i>•••</i></button><button class="theme-toggle" aria-label="Toggle color theme">☾</button></div>
+      </aside>
+
+      <section class="content" id="home">
+        <header class="mobile-header"><a class="brand" href="#home"><span class="brand-mark">B</span><span>bhagva<span>you</span></span></a><button class="theme-toggle" aria-label="Toggle color theme">☾</button></header>
+        <div class="feed-head"><div><p class="eyebrow">Tuesday, 16 September</p><h1>Good morning, Vinod <span>✦</span></h1></div><button class="icon-button" aria-label="Search" data-view="explore">⌕</button></div>
+        <section class="story-row" aria-label="Stories">
+          <button class="story add-story"><span>＋</span><small>Your story</small></button>
+          <button class="story"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Maya" /><small>Maya</small></button>
+          <button class="story"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Arjun" /><small>Arjun</small></button>
+          <button class="story"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Nisha" /><small>Nisha</small></button>
+          <button class="story"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Anika" /><small>Anika</small></button>
+          <button class="story"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=crop&w=150&q=80" alt="Ishan" /><small>Ishan</small></button>
+        </section>
+        <button class="composer-prompt" data-open-composer><span class="avatar mini">VK</span><span>Share an idea, a moment, a spark...</span><i>▧</i><i>◉</i></button>
+        <div class="feed-tabs"><button class="tab active">For you</button><button class="tab">Following</button><button class="filter">≡ Filter</button></div>
+        <div id="user-posts" aria-live="polite"></div>
+        <section class="post-card" data-post="1">
+          <div class="post-top"><img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Maya Singh" /><div><strong>Maya Singh <em>✓</em></strong><p>@mayasketches · 24 min</p></div><button class="more" aria-label="Post options" data-options>•••</button></div>
+          <p class="post-copy">A tiny reminder that your first draft is allowed to be messy. The magic is in coming back to it. <a href="#explore">#CreativeProcess</a> <a href="#explore">#BhagvaYou</a></p>
+          <img class="post-media" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1100&q=85" alt="Artist painting a colorful landscape" />
+          <div class="post-stats"><span><b class="liked-dot">♥</b> 2,481</span><span>118 comments</span></div>
+          <div class="post-actions"><button data-like>♡ <span>Like</span></button><button data-comment>◌ <span>Comment</span></button><button data-share>↗ <span>Share</span></button><button data-save>⌑ <span>Save</span></button></div>
+          <div class="comment-box hidden"><input aria-label="Add comment" placeholder="Write a thoughtful reply..." /><button>Send</button></div>
+        </section>
+        <section class="post-card compact" data-post="2">
+          <div class="post-top"><img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Arjun Rao" /><div><strong>Arjun Rao</strong><p>@arjun.codes · 1 hr · <span class="community-tag">Code Circle</span></p></div><button class="more" aria-label="Post options" data-options>•••</button></div>
+          <p class="post-copy">Built a micro-interaction today that made a boring form feel delightful. It took 18 lines, a good easing curve, and a little patience.</p>
+          <div class="code-snippet"><span>const</span> delight = <i>motion</i> + <i>meaning</i>;</div>
+          <div class="post-actions"><button data-like>♡ <span>Like</span></button><button data-comment>◌ <span>Comment</span></button><button data-share>↗ <span>Share</span></button><button data-save>⌑ <span>Save</span></button></div>
+          <div class="comment-box hidden"><input aria-label="Add comment" placeholder="Write a thoughtful reply..." /><button>Send</button></div>
+        </section>
+      </section>
+
+      <section class="secondary-view hidden" id="secondary-view" aria-live="polite"></section>
+
+      <aside class="right-rail">
+        <div class="search"><span>⌕</span><input aria-label="Search Bhagva You" placeholder="Search Bhagva You" /></div>
+        <section class="challenge-card"><p class="eyebrow">TODAY'S YOU CHALLENGE <span>✦</span></p><h2>Find beauty<br />in the ordinary.</h2><p>Share one frame from your everyday that tells a story.</p><div class="challenge-foot"><span><b>1,284</b> creators joined</span><button data-open-composer>Join in →</button></div></section>
+        <section class="rail-card"><div class="rail-heading"><h3>Happening now</h3><a href="#explore">See all</a></div><article><span class="event-icon orange">◒</span><div><small>LIVE IN 12 MIN</small><strong>Designing for real people</strong><p>with Sanya Patel & 2.4k others</p></div></article><article><span class="event-icon purple">♬</span><div><small>COMMUNITY JAM</small><strong>Indie sounds, open hearts</strong><p>Music Makers · 846 listening</p></div></article></section>
+        <section class="rail-card people"><div class="rail-heading"><h3>People to follow</h3><a href="#explore">See all</a></div><article><img class="avatar mini" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=100&q=80" alt="Zoya Khan"/><div><strong>Zoya Khan</strong><p>@zoyamakes</p></div><button class="follow">Follow</button></article><article><img class="avatar mini" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80" alt="Neil Thomas"/><div><strong>Neil Thomas</strong><p>@neiltravels</p></div><button class="follow">Follow</button></article></section>
+      </aside>
+    </main>
+    <nav class="bottom-nav" aria-label="Mobile navigation"><a class="active" href="#home" data-view="home">⌂<small>Home</small></a><a href="#explore" data-view="explore">⌕<small>Explore</small></a><button data-open-composer aria-label="Create post">＋</button><a href="#shorts" data-view="shorts">▷<small>Shorts</small></a><a href="#profile" data-view="profile">◉<small>Profile</small></a></nav>
+    <dialog class="composer"><form method="dialog"><div class="modal-top"><div><p class="eyebrow">CREATE A SPARK</p><h2>What’s on your mind?</h2></div><button aria-label="Close">×</button></div><label class="sr-only" for="post-text">Post message</label><textarea id="post-text" autofocus placeholder="Share something meaningful..."></textarea><div class="composer-tools"><button type="button" data-attachment="Photo">▧ Photo</button><button type="button" data-attachment="Short">▷ Short</button><button type="button" data-attachment="Topic"># Topic</button><button type="button" data-attachment="Community">◎ Community</button></div><div class="modal-actions"><small>Only positive, safe content belongs here.</small><button class="publish" value="default">Publish →</button></div></form></dialog>
+    <div class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
